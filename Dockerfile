@@ -1,4 +1,4 @@
-FROM node:alpine as builder
+FROM node:12 as builder
 
 ## Install build toolchain, install node deps and compile native add-ons
 RUN apt install -y python make g++
