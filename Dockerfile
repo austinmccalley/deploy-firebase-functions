@@ -3,7 +3,7 @@ FROM node:alpine as builder
 ## Install build toolchain, install node deps and compile native add-ons
 RUN apk add --no-cache python make g++
 
-RUN npm install -g firebase-tools
+RUN npm install firebase-tools
 
 FROM node:alpine as app
 
