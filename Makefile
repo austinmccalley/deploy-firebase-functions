@@ -1,2 +1,2 @@
 build:
-	docker build . -t jsryudev/deploy-firebase-functions
+	docker build . -t muraterzioglu/firebase-functions-deployment

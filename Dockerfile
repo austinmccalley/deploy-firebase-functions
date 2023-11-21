@@ -1,9 +1,9 @@
-FROM node:12 as builder
+FROM node:18 as builder
 
 ## Install build toolchain, install node deps and compile native add-ons
 RUN apt install -y python make g++
 
-RUN npm install firebase-tools
+RUN npm install firebase-tools yarn
 
 FROM node:alpine as app
 
